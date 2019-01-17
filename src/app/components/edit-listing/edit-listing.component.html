@@ -1,0 +1,14 @@
+<a [routerLink]="['/listings']">Back</a>
+<br>
+<h2 class="page-header">Edit Listing</h2>
+<form (submit)="onEdit()">
+	<div class="form-group">
+		<label>Title</label>
+		<input class="form-control" type="text" name="title" [(ngModel)]="title">
+	</div>
+	<div class="form-group">
+		<label>Bed Rooms</label>
+		<input class="form-control" type="number" name="bedrooms" [(ngModel)]="bedrooms">
+	</div>
+	<input type="submit" value="submit" class="btn btn-success">
+</form>
